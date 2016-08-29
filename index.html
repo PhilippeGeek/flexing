@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo Flex</title>
+    <script   src="https://code.jquery.com/jquery-3.1.0.slim.min.js"   integrity="sha256-cRpWjoSOw5KcyIOaZNo4i6fZ9tKPhYYb6i5T9RSVJG8="   crossorigin="anonymous"></script>
+    <script src="lorem.js"></script>
+    <style>
+        html, body{
+            height: 100%;
+        }
+        #container{
+            display: flex;
+            height: 30%;
+            align-items: stretch;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+        }
+        #container > .column{
+            overflow-y: scroll;
+            height:100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="column" data-lorem="30p"></div>
+        <div class="column" data-lorem="30p"></div>
+    </div>
+</body>
+</html>
